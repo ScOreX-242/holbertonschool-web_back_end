@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-This module writes type-annotated function 
+This module writes type-annotated function
 floor which takes a float n as argument and returns the floor of the float.
 """
 import math
