@@ -4,9 +4,9 @@ This module writes a type-annotated function sum_mixed_list which takes
 a list mxd_lst of integers and floats and returns their sum as a float.
 """
 
-from typing import List
+from typing import List, Union
 
 
-def sum_list(input_list: List[float]) -> float:
-    """Returns the sum of a list of floats."""
-    return sum(input_list)
+def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
+    """Returns their sum as float"""
+    return float(sum(mxd_lst))
