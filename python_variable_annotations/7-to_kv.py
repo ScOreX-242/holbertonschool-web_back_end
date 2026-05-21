@@ -4,7 +4,7 @@ This module writes a function to_kv that takes a string k and
 an int OR float v as arguments
 """
 
-from typing import Union , Tuple
+from typing import Union, Tuple
 
 def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
     """returns a tuple"""
