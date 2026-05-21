@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
-This module write a type-annotated function
-add that takes a float a and a float b as arguments
+This module add a float a and a float b as arguments
 """
 
 
