@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """ Programme that executes multiple coroutines at the same time with async """
 import asyncio
-from 0_basic_async_syntax import wait_random
+
+
+wait_random = __import__('0_basic_async_syntax').wait_random
+
 
 async def wait_n(n: int, max_delay: int = 10) -> list[float]:
     """ Function that returns the list
