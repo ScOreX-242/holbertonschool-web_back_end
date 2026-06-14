@@ -2,7 +2,7 @@
 """Utility to calculate slice bounds for pagination."""
 
 
-def get_page_bounds(page: int, per_page: int) -> tuple:
+def index_range(page: int, page_size: int) -> tuple:
     """
     Computes the starting and ending indices
     for a given page number and items per page.
