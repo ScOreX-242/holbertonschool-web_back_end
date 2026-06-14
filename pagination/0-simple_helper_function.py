@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+"""Utility to calculate slice bounds for pagination."""
+
+
+def get_page_bounds(page: int, per_page: int) -> tuple:
+    """
+    Computes the starting and ending indices
+    for a given page number and items per page.
+    """
+    offset = (page - 1) * per_page
+    limit = offset + per_page
+
+    return offset, limit
