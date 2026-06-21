@@ -5,12 +5,10 @@ from pymongo import MongoClient
 
 
 if __name__ == "__main__":
-    client = MongoClient("mongodb://127.0.0.1:27017")
-    db = client["logs"]
-    collection = db["nginx"]
+    client = MongoClient('mongodb://127.0.0.1:27017')
+    collection = client.logs.nginx
 
-    total = collection.count_documents({})
-    print(f"{total} logs")
+    print("{} logs".format(collection.count_documents({})))
 
     print("Methods:")
 
@@ -25,4 +23,4 @@ if __name__ == "__main__":
         "path": "/status"
     })
 
-    print(f"{status} status check")
+    print("{} status check".format(status))
